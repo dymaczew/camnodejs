@@ -153,18 +153,18 @@
         "group_name": "virtualmachine"
     },
     {
-      "name": "hostname",
-      "label": "Hostname",
-      "description": "Hostname of the virtual instance to be deployed",
-      "type": "string",
-      "default": "",
-      "validation": "",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+        "name": "hostname",
+        "type": "string",
+        "description": "Hostname of virtual machine",
+        "label": "Hostname",
+        "required": "true",
+        "secured": "false",
+        "immutable": "false",
+        "hidden": "false",
+        "default": "",
+        "options": null,
+        "regex": "^(?!(.*(--)))([A-Za-z0-9]{1,2}|[A-Za-z0-9][A-Za-z0-9-]{1,198}[A-Za-z0-9])$",
+        "group_name": "virtualmachine"
     },
     {
       "name": "public_ssh_key",
