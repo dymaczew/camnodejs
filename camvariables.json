@@ -7,16 +7,8 @@
   "output_namespace": "",
   "input_groups": [
     {
-      "name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
-      "label": "Instances - ibm_compute_vm_instance.softlayer_virtual_guest"
-    },
-    {
-      "name": "Other",
-      "label": "Other"
-    },
-    {
-      "name": "ibm_compute_vm_instance_networks",
-      "label": "ibm_compute_vm_instance Networks"
+      "name": "virtualmachine",
+      "label": "Virtual machine"
     }
   ],
   "output_groups": [ ],
@@ -158,7 +150,7 @@
               "label": "Washington, D.C. 04, USA"
           }
         ],
-        "group": "virtualmachine"
+        "group_name": "virtualmachine"
     },
     {
       "name": "hostname",
@@ -167,12 +159,12 @@
       "type": "string",
       "default": "",
       "validation": "",
-      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "group_name": "virtualmachine"
     },
     {
       "name": "public_ssh_key",
@@ -181,12 +173,12 @@
       "type": "string",
       "default": "",
       "validation": "",
-      "group_name": "Other",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "group_name": "virtualmachine"
     },
     {
       "name": "cpus",
@@ -195,12 +187,12 @@
       "type": "string",
       "default": "",
       "validation": "",
-      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "group_name": "virtualmachine"
     },
     {
       "name": "memory",
@@ -209,12 +201,12 @@
       "type": "string",
       "default": "",
       "validation": "",
-      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "group_name": "virtualmachine"
     }
   ],
   "template_output_params": [  {
